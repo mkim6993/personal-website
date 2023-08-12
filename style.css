@@ -163,3 +163,38 @@ a {
   text-decoration: none;
   color: teal;
 }
+
+@media only screen and (max-width: 1080px) {
+  #jumpTo {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  header {
+    padding: 20px;
+    font-size: 1.6rem;
+    margin: 5px;
+  }
+
+  #triphubtrim {
+    width: 90%;
+  }
+
+  .horizontal-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subtext {
+    font-size: 15px;
+  }
+
+  .projectText {
+    font-size: 15px;
+  }
+}
