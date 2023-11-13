@@ -10,7 +10,7 @@
     <canvas id="bg"></canvas>
 
     <main>
-      <section style="height: 100vh;">
+      <section style="margin-bottom: 40px;">
         <header>
           <h1 style="text-decoration: none;">Hi, I'm MinSung!</h1>
           <div style="margin-bottom: 25px;">🦾 Welcome to my website!</div>
@@ -23,56 +23,96 @@
               </p>
             </div>
           </div>
-          <div class="horizontal-top skills fontthin">
-            <div class="subtext">Languages:<br/><span>Java<br/>Python<br/>JavaScript<br/>Ruby</span></div>
-            <div class="subtext">Frontend:<br/><span>HTML/CSS<br/>React<br/>React Native<br/>Ajax<br/>jQuery</span></div>
-            <div class="subtext">Backend:<br/><span>Node.js<br/>Ruby on Rails<br/>Express<br/>Flask</span></div>
-            <div class="subtext">DB:<br/><span>MongoDB<br/>Mongoose<br/>PostgreSQL<br/>SQL</span></div>
-            <div class="subtext">Other:<br/><span>Git<br/>GitHub<br/>Postman<br/>Trello<br/>Slack<br/>Figma</span></div>
+          <div class="skills fontthin" id="skills-container">
+            <div class="horizontal-top skills-item-container">
+              <div class="subtext">Languages:<br/><span>Java<br/>Python<br/>JavaScript<br/>Ruby</span></div>
+              <div class="subtext">Frontend:<br/><span>HTML/CSS<br/>React<br/>React Native<br/>Ajax<br/>jQuery</span></div>
+              <div class="subtext">Backend:<br/><span>Node.js<br/>Ruby on Rails<br/>Express<br/>Flask</span></div>
+            </div>
+            <div class="horizontal-top skills-item-container" id="skills-item-container-two">
+              <div class="subtext">DB:<br/><span>MongoDB<br/>Mongoose<br/>PostgreSQL<br/>SQL</span></div>
+              <div class="subtext">Other:<br/><span>Git<br/>GitHub<br/>Postman<br/>Trello<br/>Slack<br/>Figma</span></div>
+            </div>
           </div>
         </header>
       </section>
 
-      <section id="portfolio" style="margin-bottom: 40px;">
+      <section id="mobile-checkout-my">
+        <header>
+          <bold>Check out my...</bold><br/>
+          <a href="https://github.com/mkim6993" target="_blank">GitHub</a><br/>
+          <a href="https://www.linkedin.com/in/min-sung-kim-35636a1a7/" target="_blank">LinkedIn</a><br/>
+          <a href="/portfolio/MinsungKim_Resume.pdf" target="_blank">Resume</a>
+        </header>
+      </section>
+
+      <section id="portfolio" style="margin-bottom: 40px; margin-top: 40px;">
         <header style=" padding-bottom: 50px;">
           <h1>Portfolio</h1>
-          <img src="/webrtc.png" alt="web-rtc app" id="triphubtrim">
-          <div class="projectText fontthin">
-            <p class="projectTitle" style="color: black">WebRTC-Chat ⛓️</p>
-            This web app utilizes WebRTC to establish real-time audio and video communication in customized rooms, managing peer-to-peer connections through Socket.io to a signaling server that orchestrates SDP negotiation, ICE candidate exchange (Trickle ICE), and employs STUN and custom TURN servers hosted on a Digital Ocean droplet.
-            <br/>
-            <br />
-            WebRTC / Socket.io / React.js / Node.js/Express / Coturn  
-          </div>
-          <hr style="margin-top: 40px; margin-bottom: 40px;"/>
-          <div class="horizontal-top">
-            <img src="/improver1.PNG" alt="improver screen" class="iphoneimg">
-            <div class="projectText fontthin" style="margin-left: 25px;">
-              <p class="projectTitle" style="color: black">IMprover 🎹</p>
-              Create the foundations of an original composition or leverage the built-in features to practice improvisation.
+            <img src="/output.gif" alt="socket i.o. game" id="triphubtrim">
+            <div class="projectText fontthin">
+              <p class="projectTitle" style="color: black">WebSocket Player</p>
+              Dive into a dynamic experience with WebSocket Player, a web app that leverages the power of web sockets via the Socket.io library to visualize real-time movements of multiple remote users. 
               <br/>
               <br />
-              React Native / Expo AV / Expo Go 
+              Key Features:
+                <ul>
+                  <li>Real-time, bidirectional communication between React.js clients and Express server</li>
+                  <li>Enter the environment using your unique identity by providing a color and username</li>
+                  <li>Navigate through the environment using “ASDW” keys for fluid and responsive movement </li>
+                  <li>Witness real-time movements of other users</li>
+                </ul>
+              Socket.io / React.js / Node.js / Express 
             </div>
-          </div>
-          <hr style="margin-top: 40px; margin-bottom: 40px;"/>
-          <img src="/triphubtrim.png" alt="triphub homescreen" id="triphubtrim">
-          <div class="projectText fontthin">
-            <p class="projectTitle" style="color: black">TripHub📍</p>
-            Trip planning web app inspired by Git version control, enabling users to collaboratively plan trips using branch and merge features.
-            <br/>
-            <br />
-            Ruby on Rails / PostgreSQL / HTML/CSS / Ajax / Bootstrap / Jquery 
-          </div>
-          <hr style="margin-top: 40px; margin-bottom: 40px;"/>
-          <img src="/bandexchange.png" alt="bandexchange homescreen" id="triphubtrim">
-          <div class="projectText fontthin">
-            <p class="projectTitle" style="color: black">BandExchange 🔗</p>
-            Google Drive file-sharing web app via posts and social media features.
-            <br/>
-            <br />
-            HTML/CSS / EJS / Express / Node.js / Mongoose / MongoDB 
-          </div>
+            <hr style="margin-top: 40px; margin-bottom: 40px;"/>            
+            <img src="/webrtc.png" alt="web-rtc app" id="triphubtrim">
+            <div class="projectText fontthin">
+              <p class="projectTitle" style="color: black">WebRTC-Chat ⛓️</p>
+              This web app employs WebRTC for real-time audio and video communication, establishing peer-to-peer connections within “chat-rooms”. Users generate unique room links, where Socket.io facilitates WebSockets events to a signaling server. This server orchestrates SDP negotiations, ICE candidate exchanges (Trickle ICE), and deploys publicly accessible STUN servers alongside a custom TURN server configured on a Digital Ocean droplet. 
+              <br/>
+              <br />
+              WebRTC / Socket.io / React.js / Node.js/ Express / Coturn  
+            </div>
+            <hr style="margin-top: 40px; margin-bottom: 40px;"/>
+          <!-- <div style="display: flex; flex-direction: column; align-items: center;"> -->
+            <div class="horizontal-top" id="improver-media">
+              <img src="/improver1.PNG" alt="improver screen" class="iphoneimg">
+              <div class="projectText fontthin" style="margin-left: 25px;">
+                <p class="projectTitle" style="color: black">IMprover 🎹</p>
+                Create the foundations of an original composition or leverage the built-in features to practice improvisation.
+                <br/>
+                <br/>
+                Key Features:
+                <ul>
+                  <li>Custom chord progression workstations</li>
+                  <li>Pre-set progressions</li>
+                  <li>Modal menu for key changes</li>
+                  <li>Project looper</li>
+                </ul>
+                <br/>
+                <br />
+                React Native / Expo AV / Expo Go 
+              </div>
+            </div>
+            <hr style="margin-top: 40px; margin-bottom: 40px;"/>
+            <img src="/triphubtrim.png" alt="triphub homescreen" id="triphubtrim">
+            <div class="projectText fontthin">
+              <p class="projectTitle" style="color: black">TripHub📍</p>
+              Trip planning web app inspired by Git version control, enabling users to collaboratively plan trips using branch and merge features.
+              <br/>
+              <br />
+              Ruby on Rails / PostgreSQL / HTML/CSS / Ajax / Bootstrap / jQuery 
+            </div>
+            <hr style="margin-top: 40px; margin-bottom: 40px;"/>
+            <img src="/bandexchange.png" alt="bandexchange homescreen" id="triphubtrim">
+            <div class="projectText fontthin">
+              <p class="projectTitle" style="color: black">BandExchange 🔗</p>
+              Google Drive file-sharing web app via posts and social media features.
+              <br/>
+              <br />
+              HTML/CSS / EJS / Express / Node.js / Mongoose / MongoDB 
+            </div>
+          <!-- </div> -->
         </header>
       </section>
       

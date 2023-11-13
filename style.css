@@ -121,7 +121,7 @@ header {
 }
 
 #triphubtrim {
-  width: 600px;
+  width: 90%;
   border: 3px solid white;
   border-radius: 15px;
   box-shadow: 0 4px 5px gray;
@@ -164,7 +164,37 @@ a {
   color: teal;
 }
 
+#mobile-checkout-my {
+  display: none;
+}
+
+#skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-item-container {
+  gap: 10px;
+}
+
 @media only screen and (max-width: 1080px) {
+  body {
+    flex-direction: column;
+  }
+
+  #skills-container {
+    flex-direction: column;
+  }
+
+  #skills-item-container-two {
+    margin-top: 15px;
+  }
+
+  #mobile-checkout-my {
+    display: block;
+  }
+
   #jumpTo {
     display: none;
   }
@@ -196,5 +226,10 @@ a {
 
   .projectText {
     font-size: 15px;
+  }
+
+  #improver-media {
+    flex-direction: column;
+    align-items: center;
   }
 }
