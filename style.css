@@ -142,7 +142,9 @@ span {
 
 .projectTitle {
   font-size: 25px;
-  text-decoration: wavy;
+  /* text-decoration: wavy; */
+  color: rgb(0, 97, 97);
+  font-weight: 500;
 }
 
 .fontthin {
